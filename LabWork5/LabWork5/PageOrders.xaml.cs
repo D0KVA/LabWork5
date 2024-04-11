@@ -44,6 +44,9 @@ namespace LabWork5
             tbxstID.DisplayMemberPath = "ID_Status";
             tbxrbID.DisplayMemberPath = "ID_Rabotnik";
             tbxsgs.DisplayMemberPath = "ID_SootGS";
+
+            tbxDateO.DisplayDateStart = DateTime.Today;
+            tbxDateO.DisplayDateEnd = DateTime.Today.AddDays(31);
         }
         private void AddButton_Click(object sender, RoutedEventArgs e)
         {
