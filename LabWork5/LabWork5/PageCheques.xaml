@@ -25,7 +25,7 @@
         <Button x:Name="Delete" Grid.Column="1" Content="Удалить" FontSize="36" Click="Delete_Click"/>
         <Button x:Name="Change" Grid.Column="2" Content="Изменить" FontSize="36" Click="Change_Click"/>
         <TextBox x:Name="tbxPriceCheq" Grid.Row="1" Grid.Column="1" PreviewTextInput="tbxPriceCheq_PreviewTextInput"/>
-        <DatePicker x:Name="tbxDateCheq" Grid.Row="1" Grid.Column="2"/>
+        <DatePicker x:Name="tbxDateCheq" Grid.Row="1" Grid.Column="2" SelectedDateChanged="tbxDateCheq_SelectedDateChanged"/>
         <Button x:Name="Export" Content="Выгрузка чеков" Grid.ColumnSpan="3" Grid.Row="3" Click="Export_Click"/>
     </Grid>
 </Page>

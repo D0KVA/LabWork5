@@ -127,5 +127,21 @@ namespace LabWork5
                 tbxsgs.Text = row.Row["SootGS_ID"].ToString();
             }
         }
+
+        private void tbxDateO_SelectedDateChanged(object sender, SelectionChangedEventArgs e)
+        {
+            DatePicker datePicker = (DatePicker)sender;
+            DateTime selectedDate = datePicker.SelectedDate ?? DateTime.MinValue;
+
+            if (selectedDate < DateTime.Today)
+            {
+                datePicker.SelectedDate = DateTime.Today;
+                MessageBox.Show("Нельзя ввести прошлую дату");
+            }
+            else if (selectedDate > DateTime.Today.AddDays(31)) {
+                datePicker.SelectedDate = DateTime.Today.AddDays(30);
+                MessageBox.Show("Нельзя ввести дату, которая больше, чем месяц");
+            }
+        }
     }
 }

@@ -14,9 +14,11 @@
             <RowDefinition Height="0.1*"/>
             <RowDefinition/>
             <RowDefinition Height="0.1*"/>
+            <RowDefinition Height="0.1*"/>
         </Grid.RowDefinitions>
         <ComboBox x:Name="cbxRab" Grid.Row="0" Grid.Column="0" SelectionChanged="cbxCl_SelectionChanged"/>
         <Frame x:Name="PageFrameRab" Grid.Row="1" NavigationUIVisibility="Hidden"/>
-        <Button x:Name="Comeback" Grid.Column="0" Grid.Row="2" Content="Вернуться" FontSize="20" Click="Comeback_Click" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+        <Button x:Name="Comeback" Grid.Column="0" Grid.Row="3" Content="Вернуться" FontSize="20" Click="Comeback_Click" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+        <Button x:Name="Cassa" Grid.Column="0" Grid.Row="2" Content="Купить продукт" FontSize="20" Click="Comeback_Click" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
     </Grid>
 </Window>
