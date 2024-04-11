@@ -28,7 +28,7 @@
         <TextBox x:Name="tbxSurname" Grid.Column="0" Grid.Row="1" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" PreviewTextInput="tbxSurname_PreviewTextInput"/>
         <TextBox x:Name="tbxName" Grid.Column="1" Grid.Row="1" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" PreviewTextInput="tbxName_PreviewTextInput"/>
         <TextBox x:Name="tbxMiddleName" Grid.Column="2" Grid.Row="1" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" PreviewTextInput="tbxMiddleName_PreviewTextInput"/>
-        <TextBox x:Name="tbxdID" Grid.Column="3" Grid.Row="1" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+        <TextBox x:Name="tbxdID" Grid.Column="3" Grid.Row="1" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" PreviewTextInput="tbxdID_PreviewTextInput"/>
         <ComboBox x:Name="cbxdrID" Grid.Column="4" Grid.Row="1" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
     </Grid>
 </Page>

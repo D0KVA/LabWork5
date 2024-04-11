@@ -34,6 +34,7 @@ namespace LabWork5
         }
         private void Add_Click(object sender, RoutedEventArgs e)
         {
+           
             if (string.IsNullOrEmpty(tbxSurname.Text) || string.IsNullOrEmpty(tbxName.Text) || string.IsNullOrEmpty(tbxMiddleName.Text) || string.IsNullOrEmpty(tbxdID.Text) || string.IsNullOrEmpty(cbxdrID.Text))
             {
                 MessageBox.Show("У вас есть пустые поля");
@@ -127,6 +128,12 @@ namespace LabWork5
         private void tbxMiddleName_PreviewTextInput(object sender, TextCompositionEventArgs e)
         {
             Regex regex = new Regex("[^А-Яа-я]+");
+            e.Handled = regex.IsMatch(e.Text);
+        }
+
+        private void tbxdID_PreviewTextInput(object sender, TextCompositionEventArgs e)
+        {
+            Regex regex = new Regex("[^A-Za-z0-9@.]+");
             e.Handled = regex.IsMatch(e.Text);
         }
     }

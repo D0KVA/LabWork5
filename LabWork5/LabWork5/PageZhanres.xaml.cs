@@ -63,9 +63,9 @@ namespace LabWork5
                     zh.DeleteZhanres(Convert.ToInt32(id));
                     dg_zh.ItemsSource = zh.GetData();
                 }
-                catch (Exception ex)
+                catch
                 {
-                    MessageBox.Show("Произошла ошибка: " + ex.Message);
+                    MessageBox.Show("Произошла ошибка: Вы пытаетесь удалить связанные данные");
                 }
             }
         }
